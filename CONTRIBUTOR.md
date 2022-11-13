@@ -14,7 +14,7 @@ sudo snap install opensearch_2.3.0_amd64.snap --dangerous --jailmode
 ### Environment configuration:
 Now, configuring the required system settings along with connecting the interfaces, in either of the following ways:
 
-1. Provided [helper script](setup-dev-env.sh):
+1. Provided [helper script](tests/integration/setup-dev-env.sh):
     ```
     bash setup-dev-env.sh
     ```
@@ -54,7 +54,7 @@ sudo snap run opensearch.security-init --admin-password=admin1234
 
 ### Test your installation:
 The OpenSearch setup can be tested either in either of the following ways:
-1. Provided [helper script](test-dev-cluster.sh):
+1. Provided [helper script](tests/integration/test-dev-cluster.sh):
     ```
     bash test-dev-cluster.sh
     ```

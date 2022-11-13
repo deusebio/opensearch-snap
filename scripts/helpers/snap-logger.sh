@@ -1,18 +1,16 @@
 #!/usr/bin/env bash
 
-
 usage() {
-cat << EOF
+	cat <<EOF
 usage: snap-logger.sh step-name
 EOF
 }
 
 # Args handling
 function log() {
-    while read -r
-    do
-        echo "$(date +%F\ %T.%3N) $REPLY"
-    done
+	while read -r; do
+		echo "$(date +%F\ %T.%3N) $REPLY"
+	done
 }
 
 [ -d "${SNAP_LOG_DIR}" ] || mkdir -p "${SNAP_LOG_DIR}/"
